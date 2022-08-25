@@ -1,0 +1,1630 @@
+\documentclass[royalvopaper,10pt,twoside,onecolumn,draft]{memoir}
+\usepackage{graphicx}
+\usepackage{gnos}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+
+\setcounter{tocdepth}{1}
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+\tableofcontents
+\chapter{Reading}
+The problems in this book are almost all reading problems. They are
+not going to tax your judgement by asking you to find the largest point
+on the board, choose the direction of play, or ponder the relative merits
+of profit and outer strength. Instead, they are going to ask you to work
+out sequences of moves that capture, cut, link up, make good shape, or
+accomplish some other clear tactical objective.
+
+A good player tries to read out such tactical problems in his head
+before he puts the stones on the board. He looks before he leaps.
+Frequently he does not leap at all; many of the sequences his reading
+uncovers are stored away for future reference, and in the end never
+carried out. This is especially true in a professional game, where the two
+hundred or so moves played are only the visible part of an iceberg of
+implied threats and possibilities, most of which stays submerged. You
+may try to approach the game at that level, or you may, like most of us,
+think your way from one move to the next as you play along, but in
+either case it is your reading ability more than anything else that
+determines your rank. 
+
+There is an element of natural talent involved, but for the most part
+reading ability is developed through study and experience. As you
+become familiar with various positions and shapes you will find certain
+moves, called tesuji, that come up again and again, and once you learn
+them your reading will become much faster and more accurate. There
+are also certain habits of thinking to be acquired, which this chapter will
+try to illustrate.
+\newpage
+
+The first principle in reading is to start with a definite purpose. There
+is no better way to waste time than to say to yourself, `I wonder what
+happens if I play here', and start tracing out sequences aimlessly. Tactics
+musts serve strategy. Start by asking yourself what you would like to
+accomplish in the position in question, then start hunting for the
+sequence that accomplishes it. Once you have your goal clearly in mind
+the right move, if it exists, will be much easier to find.
+
+With the goal set, reading is a matter of working your way through a
+mental tree diagram of possible moves. You should be systematic and
+thorough. Start with the obvious move, followed by the obvious
+counter-move, the obvious counter-move to that, and so on until you
+have a sequence that ends in success for one side and failure for the
+other. Then take the last move made by the side that failed and try other
+possibilities. If they all fail too, go back to the same side's move before
+that and do the same thing again. It is important to work from the back
+toward the front of the sequence, to avoid leaving things out. Eventually
+you will arrive at a conclusion, and hopefully it will be correct.
+
+As an example, let us take the question of whether Black can cut off the
+five white stones in the lower portion of Dia.\ 1. Both players want to
+know the answer to this question, but let us imagine ourselves as Black
+and follow his thought processes as he reads the problem out.
+
+\begin{figure}[ht]
+\centering
+    {\gnos%
+    (((((>\\
+    +!!++]\\
+    ++@!!]\\
+    ++@@!]\\
+    ++@++]\\
+    ++@!+]\\
+    ++@!+]\\
+    +++@!]\\
+    +++@!]\\
+    ++*@!]\\
+    +++@@]\\
+    +++++]\\
+    }
+    Dia.\ 1: Black to Play
+\end{figure}
+
+\newpage
+
+Since he is trying to separate the two stones marked {\gnosfontsize{8}\gnos%
+t}, the obvious
+move to start with is 1 in Dia.\ 2. The obvious counter-move, White 2 in
+Dia.\ 3, fails because of Black 3. Black 1 looks promising, but we must
+consider other possible counter-moves by White.
+\gnosfontsize{12}
+\begin{figure}[ht]
+\begin{minipage}[c]{0.4\linewidth}
+\centering
+    {\gnos%
+    (((((>\\
+    +!!++]\\
+    ++@!!]\\
+    ++@@t]\\
+    ++@+{\gnosb\char1}]\\
+    ++@t+]\\
+    ++@!+]\\
+    +++@!]\\
+    +++@!]\\
+    ++*@!]\\
+    +++@@]\\
+    +++++]\\
+    }
+    Dia.\ 2
+\end{minipage}\hfill
+\begin{minipage}[c]{0.4\linewidth}
+    \centering    
+    {\gnos%
+    (((((>\\
+    +!!++]\\
+    ++@!!]\\
+    ++@@!]\\
+    ++@{\gnosw\char2}@]\\
+    ++@!+]\\
+    ++@!{\gnosb\char3}]\\
+    +++@!]\\
+    +++@!]\\
+    ++*@!]\\
+    +++@@]\\
+    +++++]\\
+    }
+    Dia.\ 3
+\end{minipage}
+\end{figure}
+
+The next most obvious counter-move is White 2 in Dia.\ 4, which
+aims at going over the black stone at \textit{a} or under it at \textit{b}. For Black 3 we
+start by blocking White's path as in Dia.\ 5 and letting him cut. Black
+gives atari at 5, White connects at 6, and Black is dead. Are there any
+better possibilities for Black 5? No, so this Black 3 fails.
+Next comes Black 3 in Dia.\ 6. After White links underneath Black has
+what looks like a tesuji at 5, but it comes to nothing. This Black 3 fails
+too.
+
+By now Black may be ready to conclude that White 2 works, but he
+still has other Black 3's to try. Sooner or later the hane at 3 in Dia.\ 7 is
+going to come to light. This is a real tesuji, the eye-stealing tesuji, and if
+you know it you probably spotted it immediately. It stops White from
+linking up, and White cannot cut at \textit{a} because of shortage of liberties,
+(that is, he would be putting himself into atari). This is still true after
+White 4 and Black 5; the white stones are cut off and dead.
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.24\linewidth}
+    \centering
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!]\\
+        ++@{\gnosEmptyLbl{\textit{a}}}@\gnosEmptyLbl{\textit{b}}\\
+        ++@!{\gnosw\char2}]\\
+        ++@!+]\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 4
+    \end{minipage}
+    \begin{minipage}[C]{0.24\linewidth}
+        \centering    
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!]\\
+        ++@{\gnosw\char4}@{\gnosb\char3}\\
+        ++@!!{\gnosb\char5}\\
+        ++@!{\gnosw\char6}]\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 5
+    \end{minipage}
+    \begin{minipage}[c]{0.24\linewidth}
+        \centering    
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!]\\
+        ++@{\gnosb\char3}@{\gnosw\char4}\\
+        ++@!{\gnosw\char2}{\gnosw\char6}\\
+        ++@!+{\gnosb\char5}\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 6
+    \end{minipage}
+    \begin{minipage}[c]{0.24\linewidth}
+        \centering    
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!]\\
+        ++@\gnosEmptyLbl{\textit{a}}@{\gnosb\char5}\\
+        ++@!!{\gnosb\char3}\\
+        ++@!+{\gnosw\char4}\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 7
+    \end{minipage}
+\end{figure}
+
+So the White 2 we have been investigating in Dias. 4 to 7 turns out to be
+a failure; that only means that other, less obvious White 2's have to be
+tested. The next candidate might be the hane shown in Dia.\ 8.
+\newpage
+
+If Black plays 3 in Dia.\ 9, White will connect at 4 and be threatening
+to link up with either \textit{a} or \textit{b}. Black cannot defend against both of these
+threats, so he has failed. In this kind of situation \textit{a} and \textit{b} are called miai;
+if one player takes one of them, the other player can take the other.
+
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.24\linewidth}
+    \centering
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!]\\
+        ++@+{\gnosb\char1}{\gnosw\char2}\\
+        ++@!+]\\
+        ++@!+]\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 8
+    \end{minipage}
+    \begin{minipage}[C]{0.24\linewidth}
+        \centering    
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!]\\
+        ++@\gnosEmptyLbl{\textit{a}}@!\\
+        ++@!{\gnosb\char3}\gnosEmptyLbl{\textit{b}}\\
+        ++@!{\gnosw\char4}]\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 9
+    \end{minipage}
+    \begin{minipage}[c]{0.24\linewidth}
+        \centering    
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!\gnosEmptyLbl{\textit{b}}\\
+        ++@{\gnosw\char4}@{\gnosw\char2}\\
+        ++@!\gnosEmptyLbl{\textit{a}}{\gnosb\char3}\\
+        ++@!{\gnosb\char5}]\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 10
+    \end{minipage}
+    \begin{minipage}[c]{0.24\linewidth}
+        \centering    
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!\gnosEmptyLbl{\textit{c}}\\
+        ++@+{\gnosb\char1}]\\
+        ++@!+]\\
+        ++@!\gnosEmptyLbl{\textit{b}}\gnosEmptyLbl{\textit{a}}\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 11
+    \end{minipage}
+\end{figure}
+Black 3 in Dia.\ 9 failed, but Black 3 in Dia.\ 10 succeeds. If White
+cuts at 4, Black has a snap-back at 5; if White plays 4 at \textit{a}, Black
+captures at \textit{b}; and if White connects at \textit{b}, Black can play 4, 5, or \textit{a}. This
+eliminates the hane for White 2.
+\newpage
+
+White's resources are fast disappearing, and we must now turn to
+rather unlikely-looking choices, such as \textit{a}, \textit{b}, and even \textit{c} in Dia.\ 11, for
+White 2. Each of these, however, can quickly be eliminated. See if you
+can find answers to them for yourself; only White \textit{a} is at all tricky, (it
+invites a mistake in which Black captures two of the white stones but
+misses the rest).
+
+If you have dealt with the moves in Dia.\ 11, then a total of six White
+2's have been shown to fail. Does that mean that Black 1 is established?
+Not yet, for there is one White 2 left, the least obvious and strongest
+move of all.
+
+The last arrow in White's quiver is the one-point jump to the edge in
+Dia. 12. It guards the cutting point at \textit{a} and hence threatens to cut at \textit{b}. If
+Black connects at 3 in Dia. 13, White can link up with 4, and Black 3 in
+Dia. 14 runs into a move that we have seen before. These two Black 3's
+are failures.
+
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.24\linewidth}
+    \centering
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!]\\
+        ++@\gnosEmptyLbl{\textit{b}}@]\\
+        ++@!+{\gnosw\char2}\\
+        ++@!\gnosEmptyLbl{\textit{a}}]\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 12
+    \end{minipage}
+    \begin{minipage}[C]{0.24\linewidth}
+        \centering    
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!]\\
+        ++@{\gnosb\char3}@{\gnosw\char4}\\
+        ++@!+!\\
+        ++@!+]\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 13
+    \end{minipage}
+    \begin{minipage}[c]{0.24\linewidth}
+        \centering    
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!]\\
+        ++@+@]\\
+        ++@!{\gnosb\char3}!\\
+        ++@!{\gnosw\char4}]\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 14
+    \end{minipage}
+    \begin{minipage}[c]{0.24\linewidth}
+        \centering    
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!]\\
+        ++@+@{\gnosb\char3}\\
+        ++@!+!\\
+        ++@!+]\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 15
+    \end{minipage}
+\end{figure}
+
+Boldness may succeed where caution fails, so next Black tries
+blocking White's way directly with 3 in Dia.\ 15. At first, this seems to
+work. White cannot cut at 4 in Dia.\ 16 because Black will cut him right
+back with 5. Since 4 fails, there is no way White can get through to the
+corner; he has put up a good fight, but it looks as if he has lost in the
+end. Just to be on the safe side, however, Black had better doublecheck
+for an alternative to White 4 in Dia.\ 16.
+
+And sure enough, there is White 4 in Dia.\ 17. Black connects at 5
+and although White is cut off, he can live by playing 6.
+There is something maddening to Black about reading to this point,
+proving that no matter how White answers Black 1 he can be cut off,
+only to discover that the cut-off group can live. Patiently Black goes on
+and tests other Black 1's, like the one in Dia.\ 18, but they all fail.
+The conclusion he comes to is that Dia.\ 19 is the best sequence
+for both sides.
+
+Since he has put so much thought into it, Black may be tempted to
+play out Dia.\ 19 even though it is not a real success; at least it gives him
+some profit in sente, and maybe White will miss the tesuji at 2.
+
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.24\linewidth}
+    \centering
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!]\\
+        ++@{\gnosw\char4}@@\\
+        ++@!+]\\
+        ++@!{\gnosb\char5}]\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 16
+    \end{minipage}
+    \begin{minipage}[C]{0.24\linewidth}
+        \centering    
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!]\\
+        ++@{\gnosb\char5}@@\\
+        ++@!{\gnosw\char4}!\\
+        ++@!+{\gnosw\char6}\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 17
+    \end{minipage}
+    \begin{minipage}[c]{0.24\linewidth}
+        \centering    
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!]\\
+        ++@+{\gnosb\char3}]\\
+        ++@!{\gnosw\char2}]\\
+        ++@!{\gnosb\char1}{\gnosw\char4}\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 18
+    \end{minipage}
+    \begin{minipage}[c]{0.24\linewidth}
+        \centering    
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!]\\
+        ++@{\gnosb\char5\char1\char3}\\
+        ++@!{\gnosw\char4\char2}\\
+        ++@!+{\gnosw\char6}\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 19
+    \end{minipage}
+\end{figure}
+
+There are two reasons, however, why Black should restrain himself.
+The first is that moves like these should be saved for use as ko threats.
+Most games involve at least one ko fight, and the player who squanders
+his threats before the ko is going to be sorry. If Black leaves the position
+alone White is not likely to bother making a defensive move, so the
+opportunity to play 1 will still be there later on.
+
+The second reason is that there is always the chance of having made
+a reading mistake. Especially in a non-urgent position like this, you can
+afford to turn your attention elsewhere, then come back later for a
+second look. Re-examining positions that you have already read out is a
+good way to spend the time waiting for your opponent to play; it often
+turns up moves that were missed before.
+\newpage
+
+In the position we are considering, for example, if Black looks again
+he may finally see 5 in Dia.\ 20, which destroys White's eye shape while
+inflicting shortage of liberties on him to keep him from cutting at a.
+Now he has the truth. He does not have to play 1 at once, but he knows
+that when the time comes, the white stones are there for the taking.
+
+\begin{figure}[ht]
+    \centering
+        {\gnos%
+        (((((>\\
+        +!!++]\\
+        ++@!!]\\
+        ++@@!]\\
+        ++@\gnosEmptyLbl{\textit{a}}{\gnosb\char1\char3}\\
+        ++@!{\gnosw\char4\char2}\\
+        ++@!+{\gnosb\char5}\\
+        +++@!]\\
+        +++@!]\\
+        ++*@!]\\
+        +++@@]\\
+        +++++]\\
+        }
+        Dia.\ 20
+    \end{figure}
+
+When you have a sequence that almost works, like the one in Dia.\ 19,
+it is a good idea not to give up on it. Often changing just one move,
+or changing the order of moves, or reading just one move further is all
+that is needed.
+
+What about the positions that are simply too hard to read out? As far
+as possible, they should be left alone. Future developments may alter
+them, and the unreadable may become readable, and anyway you lose
+much more by having a lot of stones captured in a sequence that fails
+than by letting your opponent defend where you could have destroyed
+him. In the latter case, while your opponent is defending you get two
+moves in a row elsewhere on the board. In the former case there is no
+compensation. Sometimes, of course, you have to push ahead blindly,
+but remember that it is weak players who are always playing in
+situations they cannot read out, and strong players who refrain from
+playing even when they have the situation completely read out.
+
+Most of the rest of this book consists of examples of tesuji and
+problems on which you can practice your reading. One word of warning
+about the answers to the problems is necessary. In general there will be
+only one or two answer diagrams, showing how the correct answer
+succeeds against the opponent's strongest resistance. For the problem
+read out in this chapter, only the variations of diagrams 7, 20, and
+perhaps 10 would appear in the answer diagrams. The rest of the reading
+would be left up to you. Occasionally a wrong answer is shown as a
+pitfall, and marked `failure'.
+
+Since the opponent's strongest resistance to the correct answer fails,
+it will not usually be the best move for him to make in actual play.
+Faced with Black 1 in Dia.\ 20, for instance, White's best response is not
+the `strongest' move at 2, but rather no move at all. In the endgame
+White should play the hane, (2 at 3), and connect, a variation that would
+not appear among the answer diagrams. If you respect your opponent's
+reading ability you will want to avoid many of the even-numbered
+moves in the answer diagrams of this book.
+
+It took us twenty diagrams to get through one problem in this
+chapter, but most of the problems coming up will not turn out to be so
+complicated, and even the hard ones should not take so long once you
+have gotten a grasp of tesuji. The importance of learning tesuji is that
+you learn where to look for the answer, and can go straight to the move
+that works without having to waste time thinking about moves that fail.
+
+\chapter{Capture the Cutting Stones}
+Diagram 1 shows the kind of move that this chapter is about. White
+has one stone on the outside, partly surrounded by black stones but
+ready to make a dash for the open. Black 1 traps it, blocking its escape
+and capturing it.
+
+Diagram 2 shows the same type of operation, except that now Black 1
+captures two white stones. Try as they may, they cannot escape. In the
+next few pages you will meet more advanced tesuji for trapping enemy
+stones out in the open or for running them to earth at the edge of the
+board.
+
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +++!!++]\\
+        ++@@!+!]\\
+        +++!@!+]\\
+        ++{\gnosb\char1}+@@!]\\
+        ++++++!]\\
+        +++++++]\\
+        }
+        Dia.\ 1
+    \end{minipage}%
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        ((((@((>\\
+        +++@!!!]\\
+        ++@@@!+!\\
+        +++!!@!]\\
+        ++{\gnosb\char1}++@@]\\
+        +++++++]\\
+        +++++++]\\
+        }
+        Dia.\ 2
+    \end{minipage}%
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        (((((((!\\
+        +++@!!!]\\
+        ++@@@@!]\\
+        +++!!@!]\\
+        ++\gnosEmptyLbl{\textit{a}}++@@]\\
+        +++++++]\\
+        +++++++]\\
+        }
+        Dia.\ 3
+    \end{minipage}
+\end{figure}
+
+What makes moves like this worth playing is not so much the size of
+the capture—Black is getting only two points in Dia.\ 1 and four points
+in Dia.\ 2—but the fact that the captured stones were cutting stones. If
+White, instead of Black, played 1 in Dia.\ 1 for example, the black stones
+would be split into two very weak groups, one or the other of which
+would almost surely die.
+
+Contrast this with Dia.\ 3, where the two white stones are not cutting
+stones. Black could capture them with a, but that would be only a four-
+point move of little significance. Black should ignore the enemy
+stones, extend farther from his position, and try to surround a much
+larger area.
+
+\section{The Knight's Move Tesuji}
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.5\linewidth}
+        \centering    
+        {\gnos%
+        +++@+++\\
+        !!!@+++\\
+        !@@!T++\\
+        +++!+++\\
+        +@@+\gnosEmptyLbl{\textit{a}}++\\
+        +++++++\\
+        +++++++\\
+        }
+        Dia.\ 1
+    \end{minipage}%
+    \begin{minipage}[c]{0.5\linewidth}
+        \centering    
+        {\gnos%
+        +++@+++\\
+        !!!@{\gnosb\char5}++\\
+        !@@!@{\gnosw\char4}+\\
+        +++!{\gnosw\char2}{\gnosb\char3\char7}\\
+        +@@{\gnosw\char8}{\gnosb\char1}{\gnosw\char6}+\\
+        +++++++\\
+        +++++++\\
+        }
+        Dia.\ 2
+    \end{minipage}
+\end{figure}
+
+\noindent
+\textbf{Dia.\ 1} Black wants to capture the two white stones in the center. Black
+\textit{a}, the obvious move, does not work because White can push out
+between \textit{a} and {\gnosfontsize{9}\gnos T} and escape with a series of ataris. 
+
+\noindent
+\textbf{Dia.\ 2} Ataris at 4 and 6 spring White free. Fortunately there is a play
+that succeeds where Black 1 fails.
+
+\gnosfontsize{12}
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.5\linewidth}
+        \centering    
+        {\gnos%
+        +++@+++\\
+        !!!@+++\\
+        !@@!T++\\
+        +++!{\gnosw\char2}{\gnosb\char3}+\\
+        +@@++{\gnosb\char1}+\\
+        +++++++\\
+        +++++++\\
+        }
+        Dia.\ 3
+    \end{minipage}%
+    \begin{minipage}[c]{0.5\linewidth}
+        \centering    
+        {\gnos%
+        +++@+++\\
+        !!!@+++\\
+        !@@!@++\\
+        +++!+++\\
+        +@@+{\gnosw\char2}{\gnosb\char1}+\\
+        ++++{\gnosb\char3}++\\
+        +++++++\\
+        }
+        Dia.\ 4
+    \end{minipage}
+\end{figure}
+
+\noindent
+\textbf{Dia.\ 3} This Black 1 is the tesuji; observe its knight's-move relation to
+Black {\gnosfontsize{9}\gnos T}, the weak stone that caused the trouble in the previous
+diagram. After 2 and 3 an atari against Black {\gnosfontsize{9}\gnos T} would accomplish
+nothing, and White is trapped much as in Dia.\ 2 on the previous page. 
+
+\noindent
+\textbf{Dia.\ 4} Nor can White escape this way. Black 3 stops him.
+
+\noindent
+\textbf{Problem 1.} White to play and capture the cutting stones.
+
+\noindent
+\textbf{Problem 2.} White to ply and capture the cutting stones.
+
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.5\linewidth}
+        \centering    
+        {\gnos%
+        ++++++++]\\
+        ++++++@+]\\
+        +++++!!!]\\
+        ++++@+!@]\\
+        +++!@@!@]\\
+        +!+!!!@@]\\
+        ++@!@@!!]\\
+        +++@++@@]\\
+        )))))))).\\
+        }
+        Problem 1
+    \end{minipage}%
+    \begin{minipage}[c]{0.5\linewidth}
+        \centering    
+        {\gnos%
+        ++++++++]\\
+        +@++++!+]\\
+        +++++!++]\\
+        ++++@@!!]\\
+        +++!@!!@@\\
+        ++!@!@@@]\\
+        +@+@!+@+@\\
+        +++@!!!@@\\
+        )))))))!.\\
+        }
+        Problem 2
+    \end{minipage}
+\end{figure}
+
+\section{The Loose Ladder Tesuji}
+\noindent
+\textbf{Dia.\ 1.} If Black is going to get any kind of result out of this position he
+has to capture the pair of white stones to the right of \textit{a}, but how? An
+atari at a would not work.
+
+\noindent
+\textbf{Dia.\ 2.} Black 1 is the tesuji; it sets up a loose ladder.
+
+\gnosfontsize{12}
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +++@@@!]\\
+        ++\gnosEmptyLbl{\textit{a}}!!@!]\\
+        ++++@!!]\\
+        ++++@!+]\\
+        ++!+!@@]\\
+        ++++!++]\\
+        +++++@+]\\
+        +++++++]\\
+        }
+        Dia.\ 1
+    \end{minipage} 
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +++@@@!]\\
+        +++!!@!]\\
+        ++{\gnosb\char1}+@!!]\\
+        ++++@!+]\\
+        ++!+!@@]\\
+        ++++!++]\\
+        +++++@+]\\
+        +++++++]\\
+        }
+        Dia.\ 2
+    \end{minipage} 
+    \begin{minipage}[c]{0.32\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +{\gnosb\char5}{\gnosw\char4}@@@!]\\
+        +{\gnosb\char3}{\gnosw\char2}!!@!]\\
+        ++@\gnosEmptyLbl{\textit{a}}@!!]\\
+        +++\gnosEmptyLbl{\textit{b}}@!+]\\
+        ++!+!@@]\\
+        ++++!++]\\
+        +++++@+]\\
+        +++++++]\\
+        }
+        Dia.\ 3
+    \end{minipage}%
+\end{figure}
+
+\noindent
+\textbf{Dia.\ 3.} Black guides White firmly to the edge of the board with 3 and 5,
+not only trapping the fleeing stones but capturing the whole corner. If at
+any point White plays \textit{a}, Black \textit{b} puts him in atari and hastens his end.
+
+\noindent
+\textbf{Problem 1.} White to play and capture the cutting stone. It is not enough
+to find the first move; read out the whole sequence accurately.
+
+\noindent
+\textbf{Problem 2.} Black to play and capture White's cutting stones. If you can't
+head them off in one `direction', try the other direction.
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.5\linewidth}
+        \centering    
+        {\gnos%
+        \char91+++++++++\\
+        \char91+++++++++\\
+        \char91+++++++++\\
+        \char91++++++@++\\
+        \char91+!!@+++++\\
+        \char91!+@!!+@+*\\
+        \char91!@@@!++++\\
+        @@+!+@@+++\\
+        ,)))))))))\\
+        }
+        Problem\ 1
+    \end{minipage}% 
+    \begin{minipage}[c]{0.5\linewidth}
+        \centering    
+        {\gnos%
+        \char91+++++++++++\\
+        \char91+++++++++++\\
+        \char91+!!!+++++++\\
+        \char91++@++++++++\\
+        \char91+++++++++++\\
+        \char91+@@@@@++*!+\\
+        \char91!!+!@!!++++\\
+        \char91+++!!@@++++\\
+        ,)))))))))))\\
+        }
+        Problem\ 2
+    \end{minipage}% 
+\end{figure}
+
+\section{The Slapping Tesuji}
+\noindent
+\textbf{Dia.\ 1.} Black is trying to bring his two stones out into the open with {\gnosfontsize{9}\gnos T},
+(although he is doing it wrong, as will quickly become clear). Can
+White stop him? The series of ataris, i.e. the ladder, that starts with
+White \textit{a} is broken by Black {\gnosfontsize{9}\gnos T}, so White must look for something else.
+
+\noindent
+\textbf{Dia.\ 2.} In this shape White 1 is the tesuji. It makes White \textit{a} a real threat,
+so if Black is going to resist he must either connect at a himself or try to
+slip out with \textit{b}.
+
+\noindent
+\textbf{Dia.\ 3.} But if Black connects at 2, White has him in a loose ladder with
+3 and the rest.
+
+\gnosfontsize{12}
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        \char91+++++++\\
+        \char91++!++++\\
+        \char91+!@++++\\
+        \char91+!@\gnosEmptyLbl{\textit{a}}T++\\
+        \char91!@!!+++\\
+        \char91@@@!+++\\
+        \char91++@!+!+\\
+        \char91++@@!++\\
+        ,)))))))\\
+        }
+        Dia.\ 1
+    \end{minipage}% 
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        \char91+++++++\\
+        \char91++!\gnosEmptyLbl{\textit{b}}+++\\
+        \char91+!@+{\gnosw\char1}++\\
+        \char91+!@\gnosEmptyLbl{\textit{a}}@++\\
+        \char91!@!!+++\\
+        \char91@@@!+++\\
+        \char91++@!+!+\\
+        \char91++@@!++\\
+        ,)))))))\\
+        }
+        Dia.\ 2
+    \end{minipage}% 
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        \char91+++++++\\
+        \char91++!++++\\
+        \char91+!@+!++\\
+        \char91+!@{\gnosb\char2}@{\gnosw\char3}+\\
+        \char91!@!!{\gnosb\char4}{\gnosw\char5}+\\
+        \char91@@@!{\gnosb\char6}++\\
+        \char91++@!{\gnosw\char7}!+\\
+        \char91++@@!++\\
+        ,)))))))\\
+        }
+        Dia.\ 3
+    \end{minipage}
+\end{figure}
+
+\noindent
+\textbf{Dia.\ 4.} Black 6 here, an attempt to set up a snap-back, bows before
+White 7.
+
+\noindent
+\textbf{Dia.\ 5.} What about the other possible Black 2? White 3 gives atari, and
+from there on the moves are the same as before, except that the loose
+ladder becomes an ordinary ladder.
+
+\noindent
+\textbf{Dia.\ 6.} To return to Black's original move, if he wants to escape he has
+to make an empty triangle with 1. Empty triangles are bad shape, but at
+least he has a chance to split White up and attack.
+
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        \char91+++++++\\
+        \char91++!++++\\
+        \char91+!@+!++\\
+        \char91+!@@@!+\\
+        \char91!@!!@!+\\
+        \char91@@@!+{\gnosb\char6}{\gnosw\char7}\\
+        \char91++@!+!+\\
+        \char91++@@!++\\
+        ,)))))))\\
+        }
+        Dia.\ 4
+    \end{minipage}%
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        \char91+++++++\\
+        \char91++!{\gnosb\char2}+++\\
+        \char91+!@{\gnosw\char3}!++\\
+        \char91+!@{\gnosb\char4}@{\gnosw\char5}+\\
+        \char91!@!!+++\\
+        \char91@@@!+++\\
+        \char91++@!+!+\\
+        \char91++@@!++\\
+        ,)))))))\\
+        }
+        Dia.\ 5
+    \end{minipage}
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        \char91+++++++\\
+        \char91++!++++\\
+        \char91+!@{\gnosb\char1}+++\\
+        \char91+!@++++\\
+        \char91!@!!+++\\
+        \char91@@@!+++\\
+        \char91++@!+!+\\
+        \char91++@@!++\\
+        ,)))))))\\
+        }
+        Dia.\ 6
+    \end{minipage}
+\end{figure}
+
+\noindent
+\textbf{Problem 1.} Black to play and capture the cutting stones.
+
+\noindent
+\textbf{Problem 2.} Black to play and capture the cutting stones. Be sure you
+have read out the whole sequence correctly.
+
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.57\linewidth}
+        \centering    
+        {\gnos%
+        \char91++++++++++++\\
+        \char91+!!!+!+!!+++\\
+        \char91++@+++++@+++\\
+        \char91++++++!+++++\\
+        \char91+!+++++@@@++\\
+        \char91++!+@!!@!+!!\\
+        \char91!!@@+@@!!+++\\
+        \char91!@++++++++++\\
+        ,))))))))))))\\
+        }
+        Problem 1
+    \end{minipage}%
+    \begin{minipage}[c]{0.43\linewidth}
+        \centering    
+        {\gnos%
+        \char91++++++++++\\
+        \char91++++++++++\\
+        \char91++++++++++\\
+        \char91+++++!++++\\
+        \char91+@@@@+++++\\
+        \char91!!*!@!!@++\\
+        \char91+++!!@@+++\\
+        \char91++!@@+++++\\
+        ,))))))))))\\
+        }
+        Problem 2
+    \end{minipage}
+\end{figure}
+
+\section{The Clamping Tesuji}
+\textbf{Dia.\ 1.} There may seem to be no way for White to capture anything in
+this position. If he cuts at \textit{a}, for example, Black can get away with \textit{b}.
+
+\noindent
+\textbf{Dia.\ 2.} There is a tesuji, however: the clamping move at 1. Its effect is
+to make miai of \textit{a} and \textit{b}.
+\begin{figure}
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +++++++]\\
+        ++@++++]\\
+        ++++!!+]\\
+        +++\gnosEmptyLbl{\textit{b}}@!+]\\
+        ++@\gnosEmptyLbl{\textit{a}}@@!]\\
+        ++!+@!!]\\
+        +++!!@+]\\
+        +++++@+]\\
+        ++++@++]\\
+        +++++++]\\
+        }
+        Dia.\ 1
+    \end{minipage}%
+    \begin{minipage}[c]{0.34\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +++++++]\\
+        ++@++++]\\
+        ++++!!+]\\
+        ++{\gnosw\char1}+@!+]\\
+        +\gnosEmptyLbl{\textit{b}}@\gnosEmptyLbl{\textit{a}}@@!]\\
+        ++!+@!!]\\
+        +++!!@+]\\
+        +++++@+]\\
+        ++++@++]\\
+        +++++++]\\
+        }
+        Dia.\ 2
+    \end{minipage}%
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +++++++]\\
+        ++@++++]\\
+        ++++!!+]\\
+        ++!+@!+]\\
+        +{\gnosw\char3}@{\gnosb\char2}@@!]\\
+        ++!+@!!]\\
+        +++!!@+]\\
+        +++++@+]\\
+        ++++@++]\\
+        +++++++]\\
+        }
+        Dia.\ 3
+    \end{minipage}%
+\end{figure}
+
+\noindent
+\textbf{Dia.\ 3.} For Black to connect at 2 is pointless. White 3 leaves him with
+no room to wriggle.
+
+\noindent
+\textbf{Dia.\ 4.} But if he extends out with 2, White 3 severs him. Black's 4 does
+not work because White 5 captures his stones in a snap-back. Similarly,
+if Black played 2 at 4, White would answer at 5, leaving 2 and 3 as miai.
+Clamping tesuji do not always involve snap-back, but they are sometimes
+hard to see, so we have given you three problems this time.
+
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.50\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +++++++]\\
+        ++@++++]\\
+        +++{\gnosw\char5}!!+]\\
+        ++!{\gnosb\char4}@!+]\\
+        +{\gnosb\char2}@{\gnosw\char3}@@!]\\
+        ++!+@!!]\\
+        +++!!@+]\\
+        +++++@+]\\
+        ++++@++]\\
+        +++++++]\\
+        }
+        Dia.\ 4
+    \end{minipage}%
+    \begin{minipage}[c]{0.50\linewidth}
+        \centering    
+        {\gnos%
+        (((((((!((>\\
+        +++++@!+!!]\\
+        +@++++@+!@]\\
+        +*++@+@@!@]\\
+        +@+@!!@!@@]\\
+        +++@++!!++]\\
+        ++++++++@+]\\
+        +++++++@++]\\
+        ++++++++++]\\
+        }
+        Problem 1
+    \end{minipage}%
+\end{figure}
+
+\noindent
+\textbf{Problem 1.} White to play and capture the cutting stones.
+
+\noindent
+\textbf{Problem 2.} Black to play and halt White's escape. Don't be confused by
+extraneous stones.
+
+\noindent
+\textbf{Problem 3.} White to play and capture the cutting stones.
+
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.50\linewidth}
+        \centering    
+        {\gnos%
+        (((((((((>\\
+        ++++@++!@]\\
+        +!+!@!!@+]\\
+        \char42++@@+*@+]\\
+        ++++!+!@+]\\
+        +++++++++]\\
+        +++++++++]\\
+        +++++++++]\\
+        }
+        Problem 2
+    \end{minipage}%
+    \begin{minipage}[c]{0.50\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +@@+++@]\\
+        ++!@+@!]\\
+        ++!+*+!]\\
+        ++!@@!+]\\
+        ++@!!++]\\
+        +++++++]\\
+        +++++++]\\
+        }
+        Problem 3
+    \end{minipage}%
+\end{figure}  
+
+\section{The Nose Tesuji}
+
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +++++++]\\
+        ++++@@+]\\
+        +++!!@+]\\
+        ++++@!+]\\
+        ++@\gnosEmptyLbl{\textit{a}}@!+]\\
+        ++++@!+]\\
+        +++!!++]\\
+        +++++++]\\
+        }
+        Dia.\ 1
+    \end{minipage}%
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +++++++]\\
+        ++++@@+]\\
+        ++{\gnosb\char1}!!@+]\\
+        ++++@!+]\\
+        ++@\gnosEmptyLbl{\textit{a}}@!+]\\
+        ++++@!+]\\
+        +++!!++]\\
+        +++++++]\\
+        }
+        Dia.\ 2
+    \end{minipage}%
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        ++{\gnosb\char5}{\gnosw\char4}+++]\\
+        ++{\gnosb\char3}{\gnosw\char2}@@+]\\
+        ++@!!@+]\\
+        ++++@!+]\\
+        ++@+@!+]\\
+        ++++@!+]\\
+        +++!!++]\\
+        +++++++]\\
+        }
+        Dia.\ 3
+    \end{minipage}%
+\end{figure}
+
+
+\textbf{Dia.\ 1.} Black is in a position to capture the upper pair of white stones,
+but he must be careful because the danger of White a is staring him in
+the face. A non-contact play would be too slow.
+
+\noindent
+\textbf{Dia.\ 2.} Black 1 hits White squarely on the nose, so to speak. More to the
+point, it defends against a and catches the white stones in a loose ladder.
+
+\noindent
+\textbf{Dia.\ 3.} Black 3 and 5 drive White to the edge of the board and allow
+him no escape.
+
+\noindent
+\textbf{Problem 1.} White to play and capture the cutting stones. As usual, be
+sure to read out the whole sequence.
+
+\noindent
+\textbf{Problem 2.} Black to play and capture the stone marked {\gnosfontsize{8}\gnos t}. The nose
+tesuji is not the first move, but comes later.
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.45\linewidth}
+        \centering    
+        {\gnos%
+        \char91++++++++++\\
+        \char91@@++++++++\\
+        \char91!@++++++++\\
+        \char91!!+@++++++\\
+        \char91++!@!!!!@+\\
+        \char91++!@!@+@@+\\
+        \char91++!!@@++++\\
+        ,))))))))))\\
+        }
+        Problem 1
+    \end{minipage}%
+    \begin{minipage}[c]{0.55\linewidth}
+        \centering    
+        {\gnos%
+        \char91++++++++++++\\
+        \char91++++++++!+++\\
+        \char91@!!+!+++!@++\\
+        \char91@!@++++@@!++\\
+        \char91@!@!@++@!!++\\
+        \char91@@!!+++t@+!+\\
+        \char91@!+++++++@!+\\
+        ,))))))))))))\\
+        }
+        Problem 2
+    \end{minipage}%
+\end{figure}
+\section{The Gross-Girt Tesuji}
+
+\noindent
+\textbf{Dia.\ 1.} Black seems to be separated into two groups, a corner one and
+an outside one, but there is a way for him to link them up and capture
+the two white stones that stand in between.
+It would be a fatal mistake for Black to start by giving atari at a.
+Common sense might tell you that; Black can give atari either at a or
+from the other side, so he should hold both ataris in reserve and wait
+until one of them becomes effective.
+
+\noindent
+\textbf{Dia.\ 2.} The tesuji is the contact play at 1. White's best response is 2, and
+Black cross-cuts with 3.
+
+\noindent
+\textbf{Dia. 3.} If White gives atari at 4, Black gives a counter-atari at 5 and
+White cannot connect at 7 because of shortage of liberties. All he can do
+is to capture at 6, letting Black have two stones with 7 or a.
+
+\gnosfontsize{12}
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +++++++]\\
+        +!!@@@+]\\
+        !+@!!++]\\
+        ++@@\gnosEmptyLbl{\textit{a}}!+]\\
+        +++++++]\\
+        +++++++]\\
+        +++++!+]\\
+        +++++++]\\
+        }
+        Dia.\ 1
+    \end{minipage}% 
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +++++++]\\
+        +!!@@@+]\\
+        !+@!!++]\\
+        ++@@+!{\gnosb\char3}]\\
+        +++++{\gnosb\char1}{\gnosw\char2}]\\
+        +++++++]\\
+        +++++!+]\\
+        +++++++]\\
+        }
+        Dia.\ 2
+    \end{minipage}% 
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +++++++]\\
+        +!!@@@+]\\
+        !+@!!{\gnosb\char7}\gnosEmptyLbl{\textit{a}}]\\
+        ++@@{\gnosb\char5}!@]\\
+        ++++{\gnosw\char4}@!]\\
+        +++++{\gnosw\char6}+]\\
+        +++++!+]\\
+        +++++++]\\
+        }
+        Dia.\ 3
+    \end{minipage}% 
+\end{figure}
+\newpage
+
+\noindent
+\textbf{Dia.\ 4.} If White gives atari from the other direction with 4, Black alters
+5 accordingly.
+
+\noindent
+\textbf{Dia.\ 5.} There is one move to watch out for in this shape. Occasionally
+when Black plays 1 White can resist with 2, threatening a and b.
+
+\noindent
+\textbf{Dia.\ 6.} But in the present position Black can foil White and make a big
+capture with 3 etc.
+
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +++++++]\\
+        +!!@@@+]\\
+        !+@!!{\gnosb\char5}{\gnosw\char4}]\\
+        ++@@{\gnosb\char7}!@{\gnosw\char6}\\
+        +++++@!]\\
+        +++++++]\\
+        +++++!+]\\
+        +++++++]\\
+        }
+        Dia.\ 4
+    \end{minipage}% 
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +++++++]\\
+        +!!@@@\gnosEmptyLbl{\textit{a}}]\\
+        !+@!!+{\gnosw\char2}]\\
+        ++@@+!+]\\
+        +++++{\gnosb\char1}\gnosEmptyLbl{\textit{b}}]\\
+        +++++++]\\
+        +++++!+]\\
+        +++++++]\\
+        }
+        Dia.\ 5
+    \end{minipage}% 
+    \begin{minipage}[c]{0.33\linewidth}
+        \centering    
+        {\gnos%
+        (((((((>\\
+        +++++++]\\
+        +!!@@@{\gnosw\char4}]\\
+        !+@!!{\gnosb\char5}!]\\
+        ++@@{\gnosw\char6}!{\gnosb\char7}]\\
+        +++{\gnosw\char10\char8}@{\gnosb\char3}]\\
+        ++{\gnosb\char11}+{\gnosb\char9}++]\\
+        +++++!+]\\
+        +++++++]\\
+        }
+        Dia.\ 6
+    \end{minipage}% 
+\end{figure}
+
+\noindent
+\textbf{Problem 1.} White to play and capture the cutting stone.
+
+\noindent
+\textbf{Problem 2.} Black to play and capture the cutting stone.
+
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.5\linewidth}
+        \centering    
+        {\gnos% 
+        \char91+@++++++\\
+        \char91+++@++++\\
+        \char91+++@!+++\\
+        \char91+@++!+++\\
+        \char91+@!!++++\\
+        \char91+!@+++++\\
+        \char91+!+@++@+\\
+        \char91++++++++\\
+        ,))))))))\\
+        }
+        Problem 1
+    \end{minipage}%
+    \begin{minipage}[c]{0.5\linewidth}
+        \centering    
+        {\gnos% 
+        \char91+!!@!+++\\
+        \char91+++!++++\\
+        \char91++++++++\\
+        \char91+!++++++\\
+        \char91+++!@@++\\
+        \char91+@@@!+++\\
+        \char91+@!!!+!+\\
+        \char91+@@!++++\\
+        ,))))))))\\
+        }
+        Problem 2
+    \end{minipage}
+
+\end{figure}
+
+\section{More Problems}
+The following eleven problems range from the very easy, such as
+numbers 3 and 4, to the moderately difficult, such as number 11. In each
+of them the idea is to capture the cutting stones. In one of the problems,
+(number 1), Black can save his cutting stones if he plays a certain way,
+but White can get a good result anyhow.
+\newpage
+
+The answers appear briefly on the following two pages. As usual, the
+answer diagrams show moves that the player who loses the sequence
+should leave unplayed.
+
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.5\linewidth}
+        \centering    
+        {\gnos% 
+        +++++++++++]\\
+        +++++++++++]\\
+        ++++!++++++]\\
+        ++@@!++++++]\\
+        +++!@!++@++]\\
+        ++*!@+++*++]\\
+        +@+!+@++@++]\\
+        +++++++++++]\\
+        ))))))))))).\\
+        }
+        1. White to play
+    \end{minipage}%
+    \begin{minipage}[c]{0.5\linewidth}
+        \centering    
+        {\gnos% 
+        +++++++++++]\\
+        +++++++++++]\\
+        +++++++++++]\\
+        +++++++++!+]\\
+        ++++!++++++]\\
+        ++@@!@@+@++]\\
+        +!!@@!+++++]\\
+        +++!!++++++]\\
+        ))))))))))).\\
+        }
+        2. Black to play
+    \end{minipage}
+
+    \begin{minipage}[c]{0.32\linewidth}
+        \centering    
+        {\gnos% 
+        +++++++]\\
+        +++++++]\\
+        +++++!+]\\
+        ++++@!@]\\
+        +++@!@@]\\
+        ++!!!!@]\\
+        +++@@@+]\\
+        ))))))).\\
+        }
+        3. White to play
+    \end{minipage}%
+    \begin{minipage}[c]{0.31\linewidth}
+        \centering    
+        {\gnos% 
+        ++++++]\\
+        ++++@+]\\
+        ++++!@]\\
+        ++!+!@]\\
+        ++@*@!]\\
+        ++++@!]\\
+        +++@!+!\\
+        )))))!.\\
+        }
+        4. Black to play
+    \end{minipage}%
+    \begin{minipage}[c]{0.36\linewidth}
+        \centering    
+        {\gnos% 
+        ++++++++]\\
+        +++++@++]\\
+        ++++++!!]\\
+        +++++@!@@\\
+        ++++!!@+]\\
+        ++++!+@@@\\
+        +++++!!@]\\
+        ))))))@).\\
+        }
+        5. White to play
+    \end{minipage}
+    \begin{minipage}[c]{0.5\linewidth}
+        \centering    
+        {\gnos% 
+        ++++++++]\\
+        ++++++++]\\
+        +++++*++]\\
+        ++++++@+]\\
+        ++++++++]\\
+        ++++++++]\\
+        ++++!+++]\\
+        +++@@!++]\\
+        ++!+@!++]\\
+        +!+@+!++]\\
+        ++++++++]\\
+        )))))))).\\
+        }
+        6. White to play
+    \end{minipage}%
+    \begin{minipage}[c]{0.5\linewidth}
+        \centering    
+        {\gnos% 
+        +++++++]\\
+        +++++!+]\\
+        +++@*++]\\
+        +++++@!]\\
+        +++@@!!]\\
+        +++!!@+]\\
+        +++++@+]\\
+        ++++@++]\\
+        ++++*!+]\\
+        ++++!++]\\
+        +++++++]\\
+        ))))))).\\
+        }
+        7. Black to play
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[ht]
+\end{figure}
+\begin{figure}[ht]
+\end{figure}
+\begin{figure}[ht]
+    \begin{minipage}[c]{0.36\linewidth}
+        \centering    
+        {\gnos% 
+        ++++++++]\\
+        ++++++++]\\
+        ++++++++]\\
+        ++++++++]\\
+        ++++++++]\\
+        ++++++++]\\
+        ++++++++]\\
+        ++++++++]\\
+        ++++++++]\\
+        ++++++++]\\
+        ++++++++]\\
+        )))))))).\\
+        }
+        8. White to play
+    \end{minipage}%
+\end{figure}
+
+\chapter{Amputate the Cutting Stones}
+The theme of this chapter is the same as that of the last: the capture
+of small groups of enemy stones. The difference is that whereas before
+the idea was to capture them by blocking their escape route, the idea
+now is to capture them by detaching them from a larger body of enemy
+stones, and the techniques differ accordingly. Usually the target stones
+will be cutting stones, but we shall not be finicky about going after non-
+cutting stones on occasion for the sheer profit of capturing them.
+\section{Snap-back}
+Snap-backs are the first really interesting tactics of the game that
+most players learn; perhaps you can remember when you first
+encountered one. For those who may not be sure of the term, the next
+three diagrams present a quick review.
+
+\section{The Throw-in Tesuji}
+\section{The Squeeze Tesuji}
+\section{Ladder-Building}
+\section{The Placement Tesuji}
+\section{More Problems}
+
+\chapter{Ko}
+
+\chapter{When Liberties Count}
+
+
+\end{document}
