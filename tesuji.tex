@@ -1,4 +1,4 @@
-\documentclass[mcrownvopaper,10pt,twopage,onecolumn,draft,showtrims]{memoir}
+\documentclass[mcrownvopaper,10pt,twopage,onecolumn,final]{memoir}
 \usepackage{graphicx}
 \usepackage{gnos}
 \usepackage[T1]{fontenc}
@@ -952,9 +952,9 @@ any point White plays \textit{a}, Black \textit{b} puts him in atari and hastens
         \centering    
         {\gnos%
         \char91+++++++++\\
-        \char91+++++++++\\
-        \char91+++++++++\\
-        \char91++++++@++\\
+        \char91{\gnosw\char11\char9}+++++++\\
+        \char91{\gnosb\char10\char8}{\gnosw\char5\char3}+++++\\
+        \char91{\gnosw\char7}{\gnosb\char6\char4\char2}{\gnosw\char1}+@++\\
         \char91+!!@+++++\\
         \char91!+@!!+@+*\\
         \char91!@@@!++++\\
@@ -969,10 +969,10 @@ any point White plays \textit{a}, Black \textit{b} puts him in atari and hastens
         \char91+++++++++++\\
         \char91+++++++++++\\
         \char91+!!!+++++++\\
-        \char91++@++++++++\\
-        \char91+++++++++++\\
-        \char91+@@@@@++*!+\\
-        \char91!!+!@!!++++\\
+        \char91++@{\gnosb\char11\char9\char7\char5}++++\\
+        \char91+++{\gnosw\char10\char8\char6\char4}{\gnosb\char3}+++\\
+        \char91+@@@@@{\gnosw\char2}+*!+\\
+        \char91!!+!@!!{\gnosb\char1}+++\\
         \char91+++!!@@++++\\
         ,)))))))))))\\
         }
