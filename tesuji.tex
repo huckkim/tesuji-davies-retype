@@ -1,4 +1,4 @@
-\documentclass[royalvopaper,10pt,twoside,onecolumn,draft]{memoir}
+\documentclass[mcrownvopaper,10pt,oneside,onecolumn,draft,showtrims]{memoir}
 \usepackage{graphicx}
 \usepackage{gnos}
 \usepackage[T1]{fontenc}
@@ -6,6 +6,16 @@
 
 \setcounter{tocdepth}{1}
 \setcounter{secnumdepth}{0}
+%\settrimmedsize{8in}{5in}{*}
+%
+%\setlength{\trimtop}{\stockheight} % \trimtop = \stockheight
+%\addtolength{\trimtop}{-\paperheight} % - \paperheight
+%\setlength{\trimedge}{\stockwidth} % \trimedge = \stockwidth
+%\addtolength{\trimedge}{-\paperwidth} % - \paperwidth
+
+\setlrmarginsandblock{.3in}{*}{1}
+\setulmarginsandblock{.5in}{*}{1}
+\checkandfixthelayout 
 
 \begin{document}
 \tableofcontents
@@ -511,7 +521,6 @@ afford to turn your attention elsewhere, then come back later for a
 second look. Re-examining positions that you have already read out is a
 good way to spend the time waiting for your opponent to play; it often
 turns up moves that were missed before.
-\newpage
 
 In the position we are considering, for example, if Black looks again
 he may finally see 5 in Dia.\ 20, which destroys White's eye shape while
@@ -730,7 +739,7 @@ nothing, and White is trapped much as in Dia.\ 2 on the previous page.
 \textbf{Problem 1.} White to play and capture the cutting stones.
 
 \noindent
-\textbf{Problem 2.} White to ply and capture the cutting stones.
+\textbf{Problem 2.} White to play and capture the cutting stones.
 
 \begin{figure}[ht]
     \begin{minipage}[c]{0.5\linewidth}
@@ -1459,7 +1468,6 @@ numbers 3 and 4, to the moderately difficult, such as number 11. In each
 of them the idea is to capture the cutting stones. In one of the problems,
 (number 1), Black can save his cutting stones if he plays a certain way,
 but White can get a good result anyhow.
-\newpage
 
 The answers appear briefly on the following two pages. As usual, the
 answer diagrams show moves that the player who loses the sequence
